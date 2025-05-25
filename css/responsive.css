@@ -1,0 +1,153 @@
+/*-- responsive --*/
+
+@media screen and (max-width: 1300px) {
+  section {
+    padding-block: 5rem;
+  }
+  .container {
+    width: 800px;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+
+  #about-box {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    text-align: center;
+  }
+
+  #info-box > img {
+    width: 300px;
+  }
+
+  #info-box ul li h2 {
+    font-size: 2rem;
+  }
+}
+
+/*-- 900px --*/
+
+@media screen and (max-width: 900px) {
+  section {
+    padding-block: 2rem;
+  }
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn-flex {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  a,
+  button {
+    width: 100%;
+  }
+
+  #header-box > ul {
+    display: none;
+  }
+  #menu-mobile {
+    display: block;
+  }
+
+  #hero {
+    padding-block: 8rem;
+  }
+
+  #hero-box h2 {
+    font-size: 1rem;
+  }
+  #hero-box .ca {
+    width: 100%;
+  }
+
+  #about-box {
+    flex-direction: column-reverse;
+  }
+  #about-box > div {
+    justify-content: center;
+    align-items: center;
+  }
+  #about-box > img {
+    width: 100%;
+  }
+
+  #info {
+    padding-top: 3rem;
+  }
+  #info-box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #info-box ul li h2 {
+    font-size: 10vw;
+  }
+  #info-box > img {
+    width: 80%;
+
+    margin-top: 0;
+  }
+
+  #token-box {
+    margin-top: 2rem;
+
+    grid-template-columns: 100%;
+    gap: 1rem 1rem;
+  }
+
+  #token-box > div {
+    padding: 1rem 1rem;
+  }
+
+  #token-box > div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #token-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1rem;
+  }
+
+  #join-box {
+    padding: 2rem 1rem;
+  }
+
+  #footer {
+    padding-top: 8rem;
+  }
+
+  #footer-box > div {
+    flex-direction: column;
+  }
+  #footer-box > div img {
+    width: 50%;
+  }
+
+  #disclaimer {
+    font-size: 1rem;
+  }
+}

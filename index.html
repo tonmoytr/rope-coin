@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic seo -->
+    <meta charset="UTF-8" />
+    <title>$ROPE - the only choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="img/images/logo.jpg" type="image/x-icon" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      #gallery {
+        background-color: #f3ba2f;
+      }
+
+      .gallery-section {
+        padding: 50px;
+        background-color: #fed330;
+        text-align: center;
+      }
+
+      .gallery-section h2 {
+        font-family: "Arial", sans-serif;
+        color: #333;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 250px; /* Fixed height */
+        object-fit: cover; /* Ensure images are cropped to fit */
+        object-position: center; /* Center the image content */
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 1024px) {
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gallery-section {
+          padding: 20px;
+        }
+
+        .gallery-section h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      @font-face {
+        font-family: "Bake Soda";
+        src: url("./img/fonts/bake_soda/Bake\ Soda.otf");
+      }
+      @font-face {
+        font-family: "Winter Minie";
+        src: url("./img/fonts/winter_minie/Winter\ Minie.ttf");
+      }
+    </style>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <div id="header-box">
+          <img
+            style="border-radius: 50%"
+            id="logo"
+            src="img/images/logo.png"
+            alt="logo"
+          />
+
+          <ul>
+            <li><a style="font-family: Winter Minie" href="#hero">HOME</a></li>
+            <li>
+              <a style="font-family: Winter Minie" href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a style="font-family: Winter Minie" href="#token">TOKEN</a>
+            </li>
+            <!-- <li>
+              <a style="font-family: Winter Minie" href="#gallery">GALLERY</a>
+            </li> -->
+            <li>
+              <a style="font-family: Winter Minie" href="#join">CONTACT</a>
+            </li>
+
+            <li>
+              <a href="buylink" rel="noopener noreferrer"
+                ><button style="font-family: Winter Minie" class="btn-3">
+                  BUY $ROPE
+                </button></a
+              >
+            </li>
+            <li>
+              <a href="dexslink" rel="noopener noreferrer"
+                ><button style="font-family: Winter Minie" class="btn-3">
+                  DEXSCREENER
+                </button></a
+              >
+            </li>
+          </ul>
+
+          <img
+            id="menu-mobile"
+            src="img/icons/menu-mobile.png"
+            alt="menu icon"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- hero -->
+
+    <section id="hero">
+      <div class="container">
+        <div id="hero-box">
+          <img src="./img/images/logo.png" alt="" />
+          <h1 style="font-family: Bake Soda; margin: 5% 0">$ROPE</h1>
+          <!-- <h2 style="font-family: Bake Soda;">ROPE</h2> -->
+          <p style="font-family: Winter Minie" class="ca">
+            CA:
+            <span style="color: white">xxxxxxxxxxxxxxxxxxxxxxxx</span>
+          </p>
+
+          <div class="btn-flex">
+            <a href="buylink" target="_blank" rel="noopener noreferrer"
+              ><button style="font-family: Winter Minie" class="btn-1">
+                BUY $ROPE
+              </button></a
+            >
+            <a href="dexslink" target="_blank" rel="noopener noreferrer"
+              ><button style="font-family: Winter Minie" class="btn-2">
+                DEXSCREENER
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- slogan -->
+
+    <section id="slogan">
+      <h2 style="font-family: Bake Soda">$ROPE !</h2>
+      <h2 style="font-family: Bake Soda"><span>ROPE !</span></h2>
+      <h2 style="font-family: Bake Soda">$ROPE !</h2>
+      <h2 style="font-family: Bake Soda"><span>ROPE !</span></h2>
+      <h2 style="font-family: Bake Soda">$ROPE !</h2>
+      <h2 style="font-family: Bake Soda"><span>ROPE !</span></h2>
+    </section>
+
+    <!-- about -->
+
+    <section id="about">
+      <div class="container">
+        <div id="about-box">
+          <img src="img/images/logo.jpg" alt="timmy" />
+
+          <div>
+            <h3
+              style="
+                font-family: Bake Soda;
+                color: white;
+                text-shadow: 2px 6px 10px rgba(0, 0, 0, 0.8);
+              "
+            >
+              $ROPE – The Only Choice
+            </h3>
+            <br />
+            <p style="font-family: Winter Minie; color: white">
+              $ROPE is a bold, community-powered token built on the
+              lightning-fast Solana blockchain. Designed for speed, simplicity,
+              and serious upside, $ROPE isn’t just another meme — it’s the only
+              choice in a sea of noise. Whether you're here to trade, build, or
+              just vibe, $ROPE ties it all together.
+            </p>
+            <br />
+            <br />
+            <a
+              href="https://t.me/ropeportal"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><button style="font-family: Winter Minie" class="btn-3">
+                JOIN COMMUNITY
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- info -->
+
+    <!-- <section id="info">
+      <div class="container">
+        <div id="info-box">
+          <ul>
+            <li>
+              <img src="img/icons/tick.png" alt="tick" />
+              <h2 style="font-family: Bake Soda">ZERO TAX</h2>
+            </li>
+            <li>
+              <img src="img/icons/tick.png" alt="tick" />
+              <h2 style="font-family: Bake Soda">100M $ROPE</h2>
+            </li>
+            <li>
+              <img src="img/icons/tick.png" alt="tick" />
+              <h2 style="font-family: Bake Soda">BURNT LP</h2>
+            </li>
+          </ul>
+
+          <img src="img/images/logo-2.png" alt="timmy" />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- token -->
+
+    <section id="token">
+      <div class="container">
+        <h2
+          style="
+            font-family: Bake Soda;
+            color: white;
+            text-shadow: 5px 8px 15px rgba(0, 0, 0, 0.8);
+          "
+        >
+          $ROPE Tokenomics
+        </h2>
+
+        <!-- <p>
+          $ROPE is committed to transparency and fairness in token distribution
+          and governance. All tokenomics parameters and community initiatives
+          will be publicly available and subject to community scrutiny and
+          feedback.
+        </p> -->
+
+        <div id="token-box">
+          <div class="ca">
+            <h4 style="font-family: Winter Minie">CA:</h4>
+            <h4 style="font-family: Winter Minie">
+              <span>xxxxxxxxxxxxxxxxxxxxxxxx</span>
+            </h4>
+          </div>
+
+          <div>
+            <h4 style="font-family: Winter Minie">NAME:</h4>
+            <h4 style="font-family: Winter Minie"><span> ROPE</span></h4>
+          </div>
+          <div>
+            <h4 style="font-family: Winter Minie">SYMBOL:</h4>
+            <h4 style="font-family: Winter Minie"><span>$ROPE</span></h4>
+          </div>
+          <div>
+            <h4 style="font-family: Winter Minie">NETWORK:</h4>
+            <h4 style="font-family: Winter Minie"><span>SOLANA</span></h4>
+          </div>
+
+          <div>
+            <h4 style="font-family: Winter Minie">SUPPLY:</h4>
+            <h4 style="font-family: Winter Minie"><span>100,000,000</span></h4>
+          </div>
+          <div>
+            <h4 style="font-family: Winter Minie">TAX:</h4>
+            <h4 style="font-family: Winter Minie"><span>BUY/SELL 0%</span></h4>
+          </div>
+          <div>
+            <h4 style="font-family: Winter Minie">LIQUIDITY:</h4>
+            <h4 style="font-family: Winter Minie"><span>BURNED</span></h4>
+          </div>
+        </div>
+
+        <div id="token-flex">
+          <h3 style="font-family: Winter Minie; color: white">Find us on:</h3>
+          <div id="token-flex-links">
+            <!-- <a
+              href="scanlink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/icons/etherscan.png" alt="icon" />
+            </a> -->
+            <a href="dexslink" target="_blank" rel="noopener noreferrer">
+              <img src="img/icons/dexscreener.png" alt="icon" />
+            </a>
+            <a
+              href="https://www.dextools.io/app/en/bsc/pair-explorer/xxxxxxxxxxxxxxxxxxxxxxxx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/icons/dextools.png" alt="icon" />
+            </a>
+            <a href="buylink" target="_blank" rel="noopener noreferrer">
+              <img src="img/images/ray.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+
+    <!-- <section id="gallery">
+      <div class="container">
+        <div class="gallery-section">
+          <h2 style="font-family: Bake Soda; font-size: 3rem">ROPE GALLERY</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="./img/images/meme.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/images/meme2.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/images/meme3.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/images/meme4.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/images/meme5.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/images/meme6.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/images/meme7.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/images/meme8.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/images/meme9.jpg" alt="Image 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- join -->
+
+    <section id="join">
+      <div class="container">
+        <div id="join-box">
+          <h2 style="font-family: Bake Soda">JOIN THE COMMUNITY</h2>
+          <p style="font-family: Winter Minie">
+            Come be part of the ROPE family—where cuteness meets unstoppable
+            energy! 🐾 Whether you're here for the fun, the vibes, or just to
+            see this adorable pup conquer BSC, there's always a place for you in
+            our pack.
+            <br />
+            <br />
+            Let’s bark, wag, and moon together! 🚀💛
+          </p>
+          <div class="btn-flex">
+            <a
+              href="https://t.me/ropeportal"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><button
+                style="font-family: Winter Minie; background-color: #1d97c9"
+                class="btn-1"
+              >
+                TELEGRAM
+              </button></a
+            >
+            <a href="twitterlink" target="_blank" rel="noopener noreferrer"
+              ><button
+                style="font-family: Winter Minie; background-color: #1da1f2"
+                class="btn-2"
+              >
+                TWITTER | X
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- info -->
+
+    <footer id="footer">
+      <div class="container">
+        <div id="footer-box">
+          <div>
+            <img
+              style="border-radius: 50%"
+              src="img/images/logo.jpg"
+              alt="logo"
+            />
+            <h3 style="font-family: Winter Minie">
+              $ROPE | <span style="color: white">All Rights Reserved</span>
+            </h3>
+          </div>
+          <br />
+          <!-- <h3  style="font-family: Winter Minie;" id="disclaimer">
+            <span style="color: #c61c19;">Email: </span>
+            PoppyTheHippoCalf@proton.me
+          </h3> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

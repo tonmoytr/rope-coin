@@ -1,0 +1,70 @@
+/*-- global --*/
+
+:root {
+  --clr-1: #111111;
+  --clr-2: #ffffff;
+  --clr-2-tr: #ffffff20;
+  --clr-3: #da1333;
+  --clr-3-tr: #da133320;
+  --clr-3-dark: #c40424;
+  --clr-4: #213875;
+  --clr-4-tr: #21387550;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+li,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 1.3rem;
+}
+
+a {
+  color: white;
+  transition: 0.3s;
+}
+a:hover {
+  color: var(--clr-3);
+}
+span {
+  color: var(--clr-3);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--clr-1);
+}
+::-webkit-scrollbar-track {
+  border-left: none;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--clr-3);
+}
